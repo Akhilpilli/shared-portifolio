@@ -1,0 +1,39 @@
+.professional-timeline {
+    time.timeline-item-dateinner {
+        background-color: var(--secondary-color);
+    }
+    .entry .title:before {
+        background-color: var(--secondary-color);
+        color: var(--secondary-color)
+    }
+    .professional-timeline-title {
+        color: var(--secondary-color);
+        text-align: center;
+        margin: rem;
+    }
+    span.vertical-timeline-element-icon.shadow-size-small.bounce-in {
+        background: var(--secondary-color) !important;
+    }
+    .vertical-timeline-element-content.bounce-in {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .vertical-timeline::before {
+        background-color: var(--secondary-color);
+        height: 90%; /* Control the length */
+        top: 6%; /* Adjust starting position */
+    }
+
+    @media screen and (max-width: 600px) {
+        .vertical-timeline::before {
+            top: 4% !important;
+        }
+    }
+
+    .vertical-timeline-element-title.project-title {
+        margin-top: 0.4rem;
+    }
+    .vertical-timeline-element-content ul {
+        margin-top: 0.38rem;
+    }
+}

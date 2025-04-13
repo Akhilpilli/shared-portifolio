@@ -1,0 +1,23 @@
+/* Click ripple effect */
+.ripple {
+    position: absolute;
+    width: 0.625rem;
+    height: 0.625rem;
+    background: rgba(221, 187, 68, 1);
+    border-radius: 50%;
+    transform: scale(1);
+    animation: ripple-animation 0.6s ease-out forwards;
+    pointer-events: none;
+  }
+  
+  @keyframes ripple-animation {
+    0% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(20);
+      opacity: 0;
+    }
+  }
+  

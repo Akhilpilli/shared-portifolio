@@ -1,0 +1,120 @@
+@media (max-width: 600px) {
+    .about-details {
+        .about-description {
+            /* width: 100vw; */
+            .self-description {
+                width: 90% !important;
+            }
+        }
+    }
+}
+
+.about {
+    
+    color: var(--text-color-dark);
+    .about-details {
+        .about-description {
+            display: flex;
+            justify-content: center;  /* Aligns content to the left horizontally */
+            align-items: flex-start;          /* Vertically centers the content */
+            flex-direction: column;       /* Stacks child divs vertically */
+            height: 100vh;
+            background-color: #f0f0f0;
+            padding: 2rem;
+
+            .self-description {
+                width: 60%;
+                text-align: left;
+                margin: 0.0625rem;
+                color: var(--text-color-dark);
+            }
+            .name-role {
+                display: flex;
+                h1 {
+                    margin: 0.0625rem;
+                }
+            }
+            .social-profile {
+                margin-top: 0.3125rem;
+                display: flex;
+                gap: 1.25rem;
+
+                .profile-link {
+                    display: block;
+                    width: 1.875rem; /* Adjust size of the logo */
+                    height: 1.875rem; /* Adjust size of the logo */
+                    overflow: hidden; /* Hide any overflow from the image */
+                }
+                .logo {
+                    width: 100%;
+                    height: 100%;  /* Ensures the div takes up the full width and height of its parent */
+                    background-size: cover;  /* Ensures background image covers the div */
+                    background-position: center;  /* Center the image */
+                    background-repeat: no-repeat;  /* Prevents the image from repeating */
+                   
+                    background-color: var(--background-color); /* Change to any color */
+                    -webkit-mask-repeat: no-repeat;
+                    mask-repeat: no-repeat;
+                    -webkit-mask-size: contain;
+                    mask-size: contain;
+                    
+                    &:hover {
+                        background-color: var(--secondary-color);
+                    }
+                  }
+
+                .logo.linkedin {
+                    -webkit-mask-image: url('../assets/linkedin-logo.svg');
+                    mask-image: url('../assets/linkedin-logo.svg');
+                }                  
+                .logo.github {
+                    -webkit-mask-image: url('../assets/github-logo.svg');
+                    mask-image: url('../assets/github-logo.svg');
+                }
+                .logo.leetcode {
+                    -webkit-mask-image: url('../assets/leetcode-logo.svg');
+                    mask-image: url('../assets/leetcode-logo.svg');
+                }
+                .logo.credly {
+                    -webkit-mask-image: url('../assets/credly-logo.svg');
+                    mask-image: url('../assets/credly-logo.svg');
+                }
+                .logo.mail {
+                    -webkit-mask-image: url('../assets/mail-logo.svg');
+                    mask-image: url('../assets/mail-logo.svg');
+                }
+                .logo.whatsapp {
+                    -webkit-mask-image: url('../assets/whatsapp-logo.svg');
+                    mask-image: url('../assets/whatsapp-logo.svg');
+                }
+            }
+        }
+
+        .react-tooltip {
+            background-color: var(--background-color);
+            filter: brightness(2);
+            color: var(--secondary-color);
+            text-transform: capitalize;
+        }
+
+        .about-image {
+            width: 40%;
+            height: max-content;       
+            border-top-left-radius: 6.25rem;
+            border-bottom-left-radius: 6.25rem;
+            overflow: hidden;
+
+            background-color: var(--secondary-color);
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .job-title-details {
+        text-align: center;
+    }
+    .job-title {
+        color: var(--secondary-color);
+    }
+    
+}

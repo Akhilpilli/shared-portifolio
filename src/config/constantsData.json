@@ -1,0 +1,143 @@
+{
+  "name": "Akhil Pilli",
+  "scialProfiles": {
+    "linkedin": "https://www.linkedin.com/in/akhil-pilli/",
+    "github": "https://github.com/Akhilpilli",
+    "leetcode": "https://leetcode.com/u/akhilpilli/",
+    "credly": "https://www.credly.com/users/akhil-pilli.45b98d82",
+    "mail": "mailto:akhilpilli3198@gmail.com",
+    "whatsapp": "https://wa.me/19728320159?text=Hello%20Akhil!"
+  },
+
+  "skillList": {
+    "Languages": ["Java", "Python", "JavaScript", "SQL", "PL/SQL"],
+    "Web_Technologies": [
+      "HTML",
+      "XML",
+      "JavaScript",
+      "JSON",
+      "YAML",
+      "NodeJS",
+      "jQuery",
+      "ReactJS",
+      "VueJS"
+    ],
+    "Java_Technologies": [
+      "Spring Boot",
+      "AKKA",
+      "Spring MVC",
+      "Rest API Services",
+      "Maven",
+      "Servlets",
+      "JUnit"
+    ],
+    "ORM_Framework": ["Hibernate", "Django"],
+    "Frameworks": ["Kafka", "NodeJS", "ReactJS", "VueJS"],
+    "Amazon_Web_Services": [
+      "EC2",
+      "Lambda",
+      "S3",
+      "RDS",
+      "SQS",
+      "SNS",
+      "DynamoDB",
+      "CloudWatch",
+      "API Gateway",
+      "Step Functions",
+      "CI/CD",
+      "CLI"
+    ],
+    "IDE_Tools": [
+      "IntelliJ IDEA",
+      "PyCharm",
+      "Visual Studio Code",
+      "Maven",
+      "Postman",
+      "SQL Developer",
+      "Robo 3T"
+    ],
+    "Databases": ["PostgreSQL", "MySQL", "MongoDB", "Redis"],
+    "AI_Tools": ["GitHub Copilot", "ChatGPT"],
+    "Test_Frameworks": ["JUnit", "Mockito"],
+    "Logging_And_MetricsTools": ["CloudWatch", "Splunk", "SLF4J"],
+    "CI_And_Scm_Tools": [
+      "JIRA",
+      "Jenkins",
+      "Git",
+      "Bitbucket",
+      "GitLab",
+      "Docker"
+    ],
+    "Code_Quality_Tools": ["SonarQube", "PMD", "CheckStyle"],
+    "Operating_Systems": ["Windows Family", "UNIX", "Linux"]
+  },
+  "jobTitles": [
+    "Full Stack Developer",
+    "Backend Developer",
+    "Java Full Stack Developer",
+    "Cloud Engineer",
+    "Microservices Architect",
+    "Software Engineer",
+    "AWS Certified Developer",
+    "Enterprise Application Developer"
+  ],
+  "professionalExperience": [
+    {
+      "company": "ADP",
+      "role": "Sr. Member Technical.",
+      "duration": "January 2022 - Present",
+      "project": [
+        {
+          "name": "LT4",
+          "description": [
+            "Modified AWS Step Functions to handle multiple products and historical data, improved messaging with SQS for better transaction processing and reduced latency.",
+            "Enhanced system validations using Step Functions and Lambda, developed unit tests with pyTest, and integrated Jenkins for streamlined CI/CD and automated deployments."
+          ]
+        },
+        {
+          "name": "Smart Connect",
+          "description": [
+            "Migrated a Mule monolithic architecture to a scalable Spring Boot multiserver setup, implementing Kafka-based messaging for real-time task notifications and transaction tracking.",
+            "Developed a token-based throttling component for rate-limiting and used Spring Batch for efficient ERP data processing, ensuring memory management and seamless data migration.",
+            "Created comprehensive API specs with Swagger, mentored junior developers, and improved test reliability using Mockito for complex dependency testing."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "AxiomIO",
+      "role": "Senior Software Engineer (Full Stack)",
+      "duration": "December 2018 - December 2022",
+      "project": [
+        {
+          "name": "TaxoAnalyzer",
+          "description": [
+            "Developed REST APIs in Node.js, integrated SQL for data retrieval, and built dynamic Vue.js components for campaign insights.",
+            "Implemented Vuex for state management, ensuring seamless UI interactions and efficient data handling."
+          ]
+        },
+        {
+          "name": "Talent Connect",
+          "description": [
+            "Developed REST APIs, implemented an email notification system for approvals, and integrated Elasticsearch for advanced search functionality.",
+            "Built and customized web screens using ReactJS with pagination, leveraging Redux for efficient state management."
+          ]
+        },
+        {
+          "name": "Hypex",
+          "description": [
+            "Migrated a monolithic system to a scalable multi-server architecture, optimizing costs and performance.",
+            "Implemented Kafka for data streaming, integrated Debezium with PostgreSQL and Redis for efficient data replication, and optimized query performance using indexing.",
+            "Developed and optimized backend components using Spring Boot, JWT authentication, and AWS Lambda for batch processing via SQS.",
+            "Integrated AWS CloudWatch and Splunk for real-time monitoring, built WebSocket-based session updates, and contributed to UI development using ReactJS."
+          ]
+        }
+      ]
+    }
+  ],
+  "contactUs": {
+    "service_id": "service_emwc4ef",
+    "template_id": "template_skj7jch",
+    "public_key": "K3cKSJpbIIfTTVoL_"
+  }
+}
