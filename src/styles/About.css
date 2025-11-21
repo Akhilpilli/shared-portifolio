@@ -19,7 +19,7 @@
             align-items: flex-start;          /* Vertically centers the content */
             flex-direction: column;       /* Stacks child divs vertically */
             height: 100vh;
-            background-color: #f0f0f0;
+            background-color: var(--text-color);
             padding: 2rem;
 
             .self-description {

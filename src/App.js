@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ProfessionalTimeline from "./components/ProfessionalTimeline";
-import MouseClickEffect from "./components/MouseClickEffect";
 
 import "./App.css";
 import Footer from "./components/Footer";
@@ -34,7 +33,6 @@ const App = () => {
   }, []);
   return (
     <Router>
-      <MouseClickEffect />
       <section id="about">
         <About config={config} />
       </section>
@@ -45,7 +43,7 @@ const App = () => {
       <section id="contact">
         <Contact config={config} />
       </section>
-      <Footer />
+      <Footer config={config} />
     </Router>
   );
 };

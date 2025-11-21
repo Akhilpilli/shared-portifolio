@@ -1,12 +1,11 @@
 import "../styles/Footer.css";
 
-function Footer() {
+function Footer({ config }) {
   const currentYear = new Date().getFullYear(); // Get the current year dynamically
-  const name = "Your Name"; // Replace with your name or company name
 
   return (
     <footer className="footer">
-      <p>© {currentYear} {name}. All Rights Reserved.</p>
+      <p>©{currentYear} {config.name}. All Rights Reserved.</p>
     </footer>
   );
 }

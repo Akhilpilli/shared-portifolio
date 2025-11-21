@@ -6,6 +6,7 @@ import "../styles/About.css";
 
 function About({ config }) {
     const skillList = config.skillList;
+    const primarySkills = config.primarySkills;
     return (
       <div className="about">
           <div className="about-details">
@@ -33,7 +34,7 @@ function About({ config }) {
                 ))}
               </div>
             </div>
-            <Skills skills={skillList}/>
+            <Skills skills={skillList} primarySkills={primarySkills}/>
           </div>
 
       </div>

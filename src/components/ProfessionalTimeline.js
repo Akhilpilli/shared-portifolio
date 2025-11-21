@@ -17,9 +17,9 @@ const ProfessionalTimeline = ({ config }) => {
         <VerticalTimelineElement
           date={experience.duration}
           position="rigth"
-          iconStyle={{ background: "#e86971", color: "#fff" }}
+          iconStyle={{ background: "var(--secondary-color)", color: "#fff" }}
           icon={<i className="fa fa-briefcase" />} 
-          lineColor={"#e86971"}
+          lineColor={"var(--secondary-color)"}
         >
           {experience.project.map((project, projectIndex) => (
             <div>
