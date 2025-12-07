@@ -10,6 +10,9 @@ import Footer from "./components/Footer";
 
 const App = () => {
   
+  const test = process.env.TEST;
+  console.log("Test env variable:", test);
+  console.log("Portfolio Data:", process.env.REACT_APP_PORTFOLIO_DATA);
   const config = JSON.parse(process.env.REACT_APP_PORTFOLIO_DATA);
 
   useEffect(() => {
