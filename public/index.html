@@ -9,6 +9,22 @@
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <title>Akhil Pilli</title>
+  <script>
+    // Apply theme immediately to prevent flash
+    (function() {
+      const savedTheme = localStorage.getItem('theme');
+      let theme = savedTheme;
+      
+      // If no saved preference, detect system preference
+      if (!theme) {
+        const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        theme = systemPrefersDark ? 'dark' : 'light';
+      }
+      
+      // Apply theme to document root
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
 </head>
 
 <body>

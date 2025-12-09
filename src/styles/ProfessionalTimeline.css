@@ -1,4 +1,8 @@
 .professional-timeline {
+    background-color: var(--section-bg);
+    padding: 2rem;
+    transition: background-color 0.3s ease;
+    
     time.timeline-item-dateinner {
         background-color: var(--secondary-color);
     }
@@ -35,5 +39,32 @@
     }
     .vertical-timeline-element-content ul {
         margin-top: 0.38rem;
+    }
+    
+    /* Fix text visibility in dark mode */
+    .vertical-timeline-element-content {
+        background-color: var(--surface-color) !important;
+        color: var(--text-color-dark) !important;
+        box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1) !important;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .vertical-timeline-element-content h3,
+    .vertical-timeline-element-content h4 {
+        color: var(--text-color-dark) !important;
+    }
+    
+    .vertical-timeline-element-content p,
+    .vertical-timeline-element-content li {
+        color: var(--text-color-dark) !important;
+    }
+    
+    .vertical-timeline-element-date {
+        color: var(--text-color-dark) !important;
+    }
+    
+    /* Ensure all text elements are visible */
+    .vertical-timeline-element-title {
+        color: var(--text-color-dark) !important;
     }
 }

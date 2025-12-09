@@ -10,8 +10,9 @@
 }
 
 .about {
-    
     color: var(--text-color-dark);
+    transition: color 0.3s ease;
+    
     .about-details {
         .about-description {
             display: flex;
@@ -19,14 +20,16 @@
             align-items: flex-start;          /* Vertically centers the content */
             flex-direction: column;       /* Stacks child divs vertically */
             height: 100vh;
-            background-color: var(--text-color);
+            background-color: var(--background-color);
             padding: 2rem;
+            transition: background-color 0.3s ease;
 
             .self-description {
                 width: 60%;
                 text-align: left;
                 margin: 0.0625rem;
                 color: var(--text-color-dark);
+                transition: color 0.3s ease;
             }
             .name-role {
                 display: flex;
@@ -52,11 +55,12 @@
                     background-position: center;  /* Center the image */
                     background-repeat: no-repeat;  /* Prevents the image from repeating */
                    
-                    background-color: var(--background-color); /* Change to any color */
+                    background-color: var(--text-color-dark); /* Change to any color */
                     -webkit-mask-repeat: no-repeat;
                     mask-repeat: no-repeat;
                     -webkit-mask-size: contain;
                     mask-size: contain;
+                    transition: background-color 0.3s ease;
                     
                     &:hover {
                         background-color: var(--secondary-color);
@@ -91,10 +95,11 @@
         }
 
         .react-tooltip {
-            background-color: var(--background-color);
-            filter: brightness(2);
+            background-color: var(--surface-color);
+            filter: brightness(1.2);
             color: var(--secondary-color);
             text-transform: capitalize;
+            transition: background-color 0.3s ease;
         }
 
         .about-image {
