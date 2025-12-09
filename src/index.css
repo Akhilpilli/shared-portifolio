@@ -18,10 +18,45 @@ code {
     monospace;
 }
 
-:root {
+/* Light Theme (Default) */
+:root,
+[data-theme="light"] {
   --primary-color: #7e5faa;  /* Purple */
-  --secondary-color: #DDBB44;  
-  --text-color: #f0f0f0; 
-  --text-color-dark: #2c3333;
-  --background-color: #333;
+  --secondary-color: #DDBB44;  /* Gold */
+  --text-color: #f0f0f0;  /* Light text */
+  --text-color-dark: #2c3333;  /* Dark text */
+  --background-color: #f0f0f0;  /* Light gray background for landing page */
+  --surface-color: #f8f9fa;  /* Light surface */
+  --navbar-bg: rgba(51, 51, 51, 0.9);  /* Dark navbar */
+  --section-bg: #f4f4f4;  /* Light section background */
+  --border-color: #ccc;  /* Light border */
+  --contact-form-bg: #f9f9f9;  /* Light form background */
+  --input-bg: #ffffff;  /* White input */
+  --input-border: #ccc;  /* Light input border */
+  --footer-bg: #333;  /* Dark footer */
+  --footer-text: #ffffff;  /* White footer text */
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --primary-color: #9d7fcc;  /* Lighter purple for dark mode */
+  --secondary-color: #DDBB44;  /* Gold stays the same */
+  --text-color: #f0f0f0;  /* Light text */
+  --text-color-dark: #e0e0e0;  /* Lighter dark text for dark mode */
+  --background-color: #1a1a1a;  /* Dark background for landing page */
+  --surface-color: #2c2c2c;  /* Dark surface */
+  --navbar-bg: rgba(26, 26, 26, 0.95);  /* Dark navbar */
+  --section-bg: #1f1f1f;  /* Dark section background */
+  --border-color: #444;  /* Dark border */
+  --contact-form-bg: #2c2c2c;  /* Dark form background */
+  --input-bg: #333333;  /* Dark input */
+  --input-border: #555;  /* Dark input border */
+  --footer-bg: #1a1a1a;  /* Dark footer */
+  --footer-text: #f0f0f0;  /* Light footer text */
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color-dark);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
