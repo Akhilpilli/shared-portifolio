@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6dc110e8.css",
+    "main.js": "/static/js/main.eee3913e.js",
+    "static/js/488.d770dea6.chunk.js": "/static/js/488.d770dea6.chunk.js",
+    "static/media/github-logo.svg": "/static/media/github-logo.f8b6ea81d7b0ef4992eb.svg",
+    "static/media/whatsapp-logo.svg": "/static/media/whatsapp-logo.24ae01defb5628cd4442.svg",
+    "static/media/leetcode-logo.svg": "/static/media/leetcode-logo.ddd503177d169723bd32.svg",
+    "static/media/credly-logo.svg": "/static/media/credly-logo.78ed88eab13feb75ea87.svg",
+    "static/media/linkedin-logo.svg": "/static/media/linkedin-logo.9e7241e99e8a00d6f0aa.svg",
+    "index.html": "/index.html",
+    "static/media/mail-logo.svg": "/static/media/mail-logo.99d4c3af48f7d47e3a16.svg",
+    "main.6dc110e8.css.map": "/static/css/main.6dc110e8.css.map",
+    "main.eee3913e.js.map": "/static/js/main.eee3913e.js.map",
+    "488.d770dea6.chunk.js.map": "/static/js/488.d770dea6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6dc110e8.css",
+    "static/js/main.eee3913e.js"
+  ]
+}
