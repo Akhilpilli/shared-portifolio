@@ -7,39 +7,43 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ProfessionalTimeline from "./components/ProfessionalTimeline";
 
+import "./index.css";
+import "./styles/global.css";
 import "./App.css";
 import Footer from "./components/Footer";
 
 const App = () => {
-  
   const config = JSON.parse(process.env.REACT_APP_PORTFOLIO_DATA);
 
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.getElementById("navbar");
       const themeToggle = document.querySelector(".floating-theme-toggle");
-      const fullscreenDivHeight =
-        document.querySelector(".about-description").offsetHeight;
+      const aboutDesc = document.querySelector(".about-description");
+
+      if (!navbar || !aboutDesc) return;
+
+      const fullscreenDivHeight = aboutDesc.offsetHeight;
 
       if (window.scrollY > fullscreenDivHeight) {
-        navbar.style.display = "flex"; // Show the navbar when scrolled beyond the fullscreen div
+        navbar.style.display = "flex";
         if (themeToggle) {
-          themeToggle.style.display = "none"; // Hide floating toggle when navbar is visible
+          themeToggle.style.display = "none";
         }
       } else {
-        navbar.style.display = "none"; // Hide the navbar when within the fullscreen div
+        navbar.style.display = "none";
         if (themeToggle) {
-          themeToggle.style.display = "flex"; // Show floating toggle when at top
+          themeToggle.style.display = "flex";
         }
       }
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => {
-      window.removeEventListener("scroll", handleScroll); // Cleanup event listener on unmount
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <ThemeProvider>
       <Router>
@@ -49,7 +53,7 @@ const App = () => {
         </section>
         <Navbar />
         <section id="experience">
-          <ProfessionalTimeline  config={config} />
+          <ProfessionalTimeline config={config} />
         </section>
         <section id="contact">
           <Contact config={config} />
